@@ -1,172 +1,125 @@
-export default function Home() {
-  const projects = [
-    {
-      title: "AI Task Management System",
-      desc: "An AI-driven task management platform with agent-based workflow support and document-aware assistance.",
-    },
-    {
-      title: "Medical Report Website",
-      desc: "A privacy-focused health record website/app concept for local storage, report upload, and AI-assisted analysis.",
-    },
-    {
-      title: "Second-hand Car Price Prediction",
-      desc: "A data project for predicting used car prices with visualization and machine learning methods.",
-    },
-  ];
+import Link from "next/link";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
-  const experiences = [
-    {
-      role: "Software Engineering / Research Experience",
-      org: "Your internship or lab",
-      time: "2024 - 2025",
-      desc: "Worked on engineering, research, and project implementation across AI, web, or systems-related tasks.",
-    },
-    {
-      role: "Team Project Contributor",
-      org: "Course / Research Project",
-      time: "2023 - 2025",
-      desc: "Contributed to research, documentation, implementation, testing, and analysis in team-based technical projects.",
-    },
-  ];
+const cards = [
+  {
+    href: "/about",
+    title: "About",
+    desc: "Learn more about my background, interests, and technical perspective.",
+  },
+  {
+    href: "/education",
+    title: "Education",
+    desc: "View my academic background, field of study, and focus areas.",
+  },
+  {
+    href: "/projects",
+    title: "Projects",
+    desc: "Explore selected projects in AI, software, and data applications.",
+  },
+  {
+    href: "/experience",
+    title: "Experience",
+    desc: "Read about research, engineering, and hands-on implementation work.",
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+    desc: "Find my email, GitHub, LinkedIn, and ways to connect.",
+  },
+];
 
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900">
-      <nav className="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <div className="text-lg font-semibold">Yong Li</div>
-          <div className="flex gap-6 text-sm text-neutral-600">
-            <a href="#about" className="hover:text-black">About</a>
-            <a href="#education" className="hover:text-black">Education</a>
-            <a href="#projects" className="hover:text-black">Projects</a>
-            <a href="#experience" className="hover:text-black">Experience</a>
-            <a href="#contact" className="hover:text-black">Contact</a>
-          </div>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-slate-950 text-slate-100">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute left-1/2 top-[-10rem] h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl" />
+        <div className="absolute right-[10%] top-[16rem] h-[22rem] w-[22rem] rounded-full bg-blue-600/20 blur-3xl" />
+        <div className="absolute left-[8%] top-[30rem] h-[18rem] w-[18rem] rounded-full bg-sky-400/10 blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.07)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(circle_at_center,black,transparent_82%)]" />
+      </div>
 
-      <section className="mx-auto grid max-w-5xl gap-10 px-6 py-20 md:grid-cols-[1.4fr_0.8fr]">
+      <Navbar />
+
+      <section className="mx-auto grid max-w-6xl gap-10 px-6 pb-14 pt-20 lg:grid-cols-[1.4fr_0.8fr] lg:pt-28">
         <div>
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-500">
-            Applied Math + Computer Science
-          </p>
-          <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-6xl">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/25 bg-cyan-400/10 px-4 py-2 text-xs font-medium tracking-wide text-cyan-200">
+            <span className="h-2 w-2 rounded-full bg-cyan-300" />
+            Blue-Tech Academic Personal Website
+          </div>
+
+          <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-white md:text-7xl">
             Yong Li
+            <span className="block bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent">
+              Applied Math + CS
+            </span>
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-neutral-700">
-            I am a student interested in AI, software engineering, web development,
-            and intelligent systems. I build projects across machine learning,
-            full-stack applications, and technical research.
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
+            I am interested in AI, software engineering, data-driven systems, and
+            modern web technologies. This website presents my academic profile,
+            projects, experience, and contact information.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <span className="rounded-full border border-neutral-300 px-4 py-2 text-sm">
-              AI
-            </span>
-            <span className="rounded-full border border-neutral-300 px-4 py-2 text-sm">
-              Web Development
-            </span>
-            <span className="rounded-full border border-neutral-300 px-4 py-2 text-sm">
-              Data / ML
-            </span>
-            <span className="rounded-full border border-neutral-300 px-4 py-2 text-sm">
-              Systems
-            </span>
+            {["AI Systems", "Machine Learning", "Web Development", "Data Visualization"].map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-sky-300/20 bg-slate-900/70 px-4 py-2 text-sm text-sky-100"
+              >
+                {item}
+              </span>
+            ))}
           </div>
         </div>
 
-        <div className="rounded-3xl border border-neutral-200 bg-neutral-50 p-6">
-          <h2 className="mb-4 text-lg font-semibold">Quick Info</h2>
-          <div className="space-y-3 text-sm text-neutral-700">
-            <p><span className="font-medium text-black">School:</span> Brown University</p>
-            <p><span className="font-medium text-black">Major:</span> Applied Math + CS</p>
-            <p><span className="font-medium text-black">Location:</span> United States</p>
-            <p><span className="font-medium text-black">Focus:</span> AI, Web, Systems</p>
-            <p><span className="font-medium text-black">Email:</span> your_email@example.com</p>
-            <p><span className="font-medium text-black">GitHub:</span> github.com/yourname</p>
-            <p><span className="font-medium text-black">LinkedIn:</span> linkedin.com/in/yourname</p>
+        <div className="rounded-3xl border border-cyan-300/15 bg-white/5 p-6 shadow-2xl shadow-cyan-950/40 backdrop-blur">
+          <div className="mb-5 flex items-center justify-between">
+            <h2 className="text-lg font-semibold text-white">Profile Overview</h2>
+            <span className="rounded-full border border-cyan-300/20 px-3 py-1 text-xs text-cyan-200">
+              2026
+            </span>
           </div>
-        </div>
-      </section>
 
-      <section id="about" className="mx-auto max-w-5xl px-6 py-12">
-        <h2 className="mb-4 text-2xl font-semibold">About</h2>
-        <p className="max-w-3xl leading-8 text-neutral-700">
-          I enjoy building practical software and exploring how AI can improve real-world systems.
-          My interests include machine learning, intelligent agents, full-stack web development,
-          data-driven applications, and human-centered technical tools.
-        </p>
-      </section>
-
-      <section id="education" className="mx-auto max-w-5xl px-6 py-12">
-        <h2 className="mb-6 text-2xl font-semibold">Education</h2>
-        <div className="grid gap-4">
-          <div className="rounded-2xl border border-neutral-200 p-6">
-            <p className="text-sm text-neutral-500">Current</p>
-            <h3 className="mt-1 text-xl font-semibold">Brown University</h3>
-            <p className="mt-2 text-neutral-700">Applied Mathematics and Computer Science</p>
-          </div>
-          <div className="rounded-2xl border border-neutral-200 p-6">
-            <p className="text-sm text-neutral-500">Previous / Additional</p>
-            <h3 className="mt-1 text-xl font-semibold">Your previous academic background</h3>
-            <p className="mt-2 text-neutral-700">Add degree, years, GPA, focus, or relevant coursework here.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="mx-auto max-w-5xl px-6 py-12">
-        <h2 className="mb-6 text-2xl font-semibold">Projects</h2>
-        <div className="grid gap-4 md:grid-cols-3">
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="rounded-2xl border border-neutral-200 p-6 transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <h3 className="text-lg font-semibold">{project.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-neutral-700">{project.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="experience" className="mx-auto max-w-5xl px-6 py-12">
-        <h2 className="mb-6 text-2xl font-semibold">Experience</h2>
-        <div className="space-y-4">
-          {experiences.map((item) => (
-            <div key={item.role} className="rounded-2xl border border-neutral-200 p-6">
-              <div className="flex flex-col justify-between gap-2 md:flex-row md:items-center">
-                <div>
-                  <h3 className="text-lg font-semibold">{item.role}</h3>
-                  <p className="text-neutral-700">{item.org}</p>
-                </div>
-                <p className="text-sm text-neutral-500">{item.time}</p>
+          <div className="space-y-4 text-sm text-slate-300">
+            {[
+              ["Institution", "Brown University"],
+              ["Major", "Applied Mathematics & Computer Science"],
+              ["Focus", "AI, Full-Stack Systems, Data Applications"],
+              ["Location", "United States"],
+            ].map(([label, value]) => (
+              <div key={label} className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
+                <p className="text-xs uppercase tracking-[0.2em] text-slate-400">
+                  {label}
+                </p>
+                <p className="mt-2 text-base font-medium text-white">{value}</p>
               </div>
-              <p className="mt-3 text-sm leading-7 text-neutral-700">{item.desc}</p>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {cards.map((card) => (
+            <Link
+              key={card.href}
+              href={card.href}
+              className="rounded-[1.75rem] border border-cyan-300/10 bg-gradient-to-b from-slate-900 to-slate-950 p-6 shadow-xl shadow-cyan-950/20 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30"
+            >
+              <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">
+                Subpage
+              </p>
+              <h3 className="mt-3 text-xl font-semibold text-white">{card.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-slate-300">{card.desc}</p>
+              <p className="mt-6 text-sm text-cyan-200">Open page →</p>
+            </Link>
           ))}
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-5xl px-6 py-12">
-        <h2 className="mb-4 text-2xl font-semibold">Contact</h2>
-        <p className="text-neutral-700">
-          Feel free to reach out for collaboration, projects, or opportunities.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-4 text-sm">
-          <a href="mailto:your_email@example.com" className="underline underline-offset-4">
-            Email
-          </a>
-          <a href="https://github.com/yourname" className="underline underline-offset-4">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/yourname" className="underline underline-offset-4">
-            LinkedIn
-          </a>
-        </div>
-      </section>
-
-      <footer className="mx-auto max-w-5xl px-6 py-10 text-sm text-neutral-500">
-        © 2026 Yong Li. All rights reserved.
-      </footer>
+      <Footer />
     </main>
   );
 }
