@@ -15,7 +15,7 @@ const cards = [
   {
     href: "/education",
     title: "Education",
-    desc: "Where I studied and the academic path I’ve taken.",
+    desc: "Where I studied and the academic path I've taken.",
     items: [
       "Brown University — M.S. in Computer Science, GPA 4.00",
       "Colorado School of Mines — B.S. in Computer Science, GPA 3.88",
@@ -24,7 +24,7 @@ const cards = [
   {
     href: "/projects",
     title: "Projects",
-    desc: "What I’ve built across AI, web, and software systems.",
+    desc: "What I've built across AI, web, and software systems.",
     items: [
       "Menu Collection Web App built with React, Express, and MongoDB",
       "AI-Driven Task Management System using agents, LangChain, Pinecone, and MongoDB",
@@ -33,7 +33,7 @@ const cards = [
   {
     href: "/experience",
     title: "Experience",
-    desc: "Where I’ve applied my skills in practice.",
+    desc: "Where I've applied my skills in practice.",
     items: [
       "Software Developer Intern with Unity and VR development experience",
       "Worked on PICO Neo3 deployment and C# interaction implementation",

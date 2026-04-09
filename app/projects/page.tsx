@@ -32,8 +32,8 @@ export default function ProjectsPage() {
   return (
     <PageShell
       eyebrow="Projects"
-      title="Selected Projects"
-      intro="A grid-based presentation of technical and academic work."
+      title="Project Highlights"
+      intro="What I've built across web development, AI, and software systems."
     >
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
@@ -41,11 +41,13 @@ export default function ProjectsPage() {
             key={project.title}
             className="rounded-[1.75rem] border border-sky-200/70 bg-white/75 p-6 shadow-lg shadow-sky-100 transition duration-300 hover:-translate-y-1 hover:border-sky-400/60"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
+            <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
               {project.tag}
             </p>
-            <h3 className="mt-3 text-xl font-semibold text-slate-900">{project.title}</h3>
-            <p className="mt-4 text-sm leading-7 text-slate-600">{project.desc}</p>
+            <h3 className="mt-3 font-serif text-2xl font-semibold text-slate-900">
+              {project.title}
+            </h3>
+            <p className="mt-4 text-base leading-7 text-slate-600">{project.desc}</p>
             <div className="mt-6 h-px w-full bg-gradient-to-r from-sky-400/60 to-transparent" />
           </article>
         ))}

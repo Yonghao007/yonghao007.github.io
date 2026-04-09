@@ -24,10 +24,7 @@ export default function PageShell({
       <Navbar />
 
       <section className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-        <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-600">
-          {eyebrow}
-        </p>
-        <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
+        <h1 className="text-4xl font-bold tracking-tight text-sky-600 md:text-6xl">
           {title}
         </h1>
         {intro ? (
