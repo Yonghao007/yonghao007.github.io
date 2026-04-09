@@ -22,6 +22,21 @@ const projects = [
     desc: "Developed an agent-based system for task workflows, summarization, and document-aware responses.",
   },
   {
+    title: "Concurrent Database Engine",
+    tag: "Go · Databases · Systems",
+    desc: "Implemented storage, indexing, concurrency control, and recovery features for a disk-oriented database system in Go.",
+  },
+  {
+    title: "Contour Sketch",
+    tag: "Computer Vision · cGAN",
+    desc: "Researched contour line generation with conditional GANs and designed post-processing to improve visual consistency.",
+  },
+  {
+    title: "Dynamic Programming Timber Problem",
+    tag: "Python · Algorithms",
+    desc: "Designed a dynamic programming solution with traceback to optimize timber selection under alternating choices.",
+  },
+  {
     title: "Clue Game",
     tag: "Java · OOP",
     desc: "Built a Java Clue game with Swing UI, AI opponents, and JUnit tests.",

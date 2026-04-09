@@ -48,12 +48,12 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-6xl px-6 pb-14 pt-20 lg:pt-28">
         <div>
-          <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
+          <h1 className="max-w-4xl font-serif text-6xl font-semibold tracking-tight md:text-7xl">
             Yonghao Li
           </h1>
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-            <p className="max-w-3xl text-lg leading-8 text-slate-600 md:text-xl">
+            <p className="max-w-3xl text-[1.05rem] leading-8 text-slate-600 md:text-xl">
               Computer Science graduate student at Brown University, interested in
               building thoughtful, user-facing systems and turning technical ideas
               into practical software.
@@ -128,10 +128,10 @@ export default function HomePage() {
               ].map((item) => (
                 <span
                   key={item.label}
-                  className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/70 px-4 py-2 text-sm shadow-sm"
+                  className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/70 px-4 py-2 text-sm font-medium shadow-sm"
                 >
                   <span className="text-sky-600">{item.icon}</span>
-                  <span className="text-slate-700">{item.label}</span>
+                  <span className="font-medium tracking-wide text-slate-700">{item.label}</span>
                 </span>
               ))}
             </div>
@@ -140,12 +140,12 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-8">
-        <div className="flex flex-col gap-5">
+        <div className="border-t border-sky-100/80">
           {cards.map((card) => (
             <Link
               key={card.href}
               href={card.href}
-              className="rounded-[1.75rem] border border-sky-200/70 bg-white/75 p-6 shadow-lg shadow-sky-100 transition duration-300 hover:-translate-y-1 hover:border-sky-400/60"
+              className="block border-b border-sky-100/80 py-8 transition-all duration-300 hover:bg-white/50 hover:px-4 hover:shadow-[0_10px_30px_rgba(125,211,252,0.18)]"
             >
               <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
                 <div>

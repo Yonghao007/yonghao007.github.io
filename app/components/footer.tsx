@@ -54,10 +54,10 @@ export default function Footer() {
       <div className="border-t border-sky-100/80 pt-12">
         <div className="grid gap-10 md:grid-cols-[1.15fr_0.85fr] md:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-600">
+            <p className="font-serif text-3xl font-semibold tracking-tight text-sky-600">
               Connect
             </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">
+            <h2 className="mt-2 text-xl font-medium tracking-wide text-slate-700">
               Yonghao Li
             </h2>
           </div>
@@ -67,7 +67,7 @@ export default function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                className="rounded-full border border-sky-200/80 bg-transparent px-5 py-3 text-sm font-medium text-sky-700 transition hover:border-sky-400 hover:bg-white/60"
+                className="rounded-full border border-sky-200/80 bg-transparent px-5 py-3 text-sm font-medium tracking-wide text-sky-700 transition hover:border-sky-400 hover:bg-white/60"
               >
                 <span className="flex items-center gap-2">
                   {link.icon}
@@ -80,8 +80,8 @@ export default function Footer() {
 
         <div className="mt-12 flex justify-center border-t border-sky-100/80 pt-6 text-sm text-slate-500">
           <div className="flex flex-col items-center justify-center gap-2 text-center md:flex-row md:gap-4">
-            <p>© 2026 Yonghao Li</p>
-            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-300/50 bg-white/75 px-3 py-1 text-xs font-medium tracking-wide text-emerald-700 shadow-sm backdrop-blur">
+            <p className="font-medium text-slate-600">© 2026 Yonghao Li</p>
+            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-300/50 bg-white/75 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700 shadow-sm backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-emerald-500" />
               Open to Opportunities
             </span>
