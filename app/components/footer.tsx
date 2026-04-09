@@ -57,7 +57,7 @@ export default function Footer() {
             <p className="font-serif text-3xl font-semibold tracking-tight text-sky-600">
               Connect
             </p>
-            <h2 className="mt-2 text-xl font-medium tracking-wide text-slate-700">
+            <h2 className="mt-2 font-serif text-2xl italic font-medium tracking-[0.08em] text-slate-700">
               Yonghao Li
             </h2>
           </div>
