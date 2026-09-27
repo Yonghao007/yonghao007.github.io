@@ -3,12 +3,12 @@
 import PageShell from "../components/pageshell";
 
 const interests = [
-  "Artificial Intelligence",
-  "Software Engineering",
-  "Full-Stack Applications",
-  "Natural Language Processing",
-  "Interactive and Immersive Systems",
-  "Human-Centered Computing",
+  "AI applications and document retrieval",
+  "Software testing and debugging",
+  "Full-stack web development",
+  "Natural language processing",
+  "VR and interactive applications",
+  "Database storage and concurrency",
 ];
 
 const techStackRows = [
@@ -55,28 +55,33 @@ export default function AboutPage() {
     <PageShell
       eyebrow="About"
       title="About Me"
-      intro="Computer Science graduate with a focus on AI and software, a broad foundation across computing, and a practical approach to building reliable products."
+      intro="I like being able to follow a problem wherever it leads: from something a user sees on screen to the code and data behind it. That curiosity has taken me into web development, AI, and VR."
     >
       <div className="flex flex-col gap-12">
         <section className="border-t border-sky-100/80 pt-8">
-          <h2 className="font-serif text-3xl font-semibold text-slate-900">Background</h2>
+          <h2 className="font-serif text-3xl font-semibold text-slate-900">A Little About Me</h2>
           <p className="mt-5 max-w-4xl text-[1.05rem] leading-8 text-slate-600">
-            I recently completed a Master of Science in Computer Science at Brown
-            University, where my work focused primarily on artificial intelligence and
-            software. Before that, my undergraduate study gave me exposure to a broader
-            range of areas, including software, computer networks, privacy and security,
-            and embedded systems.
+            I studied computer science at Colorado School of Mines and went on to
+            earn my master’s at Brown. I’ve enjoyed moving between different kinds
+            of software: a web application has to make sense to the person using
+            it, a VR interaction has to feel right on a headset, and a database has
+            to keep data consistent when several things happen at once. Working
+            across those areas has made me more attentive to how the pieces fit
+            together.
           </p>
           <p className="mt-5 max-w-4xl text-[1.05rem] leading-8 text-slate-600">
-            That mix of breadth and focus has shaped how I think about computing. I am
-            now looking for opportunities where I can contribute to technically strong,
-            practical systems through solid software engineering and intelligent behavior.
+            AI is a particular interest of mine. I’ve worked on document retrieval
+            and task automation, and I now evaluate model responses at Handshake
+            AI. Seeing where those responses fall short gives me a useful
+            perspective when building with them. I’m looking for a team where I can
+            contribute across the application, learn from other engineers, and
+            keep getting better at the work.
           </p>
         </section>
 
         <div className="flex flex-col gap-12">
           <section className="border-t border-sky-100/80 pt-8">
-            <h3 className="font-serif text-2xl font-semibold text-slate-900">Interests</h3>
+            <h3 className="font-serif text-2xl font-semibold text-slate-900">What I Work On</h3>
 
             <div className="mt-5 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
               <ul className="max-w-3xl space-y-3 text-base leading-7 text-slate-600">
@@ -116,7 +121,7 @@ export default function AboutPage() {
           </section>
 
           <section className="border-t border-sky-100/80 pt-8">
-            <h3 className="font-serif text-2xl font-semibold text-slate-900">Tech Stack</h3>
+            <h3 className="font-serif text-2xl font-semibold text-slate-900">Tools I Have Used</h3>
             <div className="mt-5 max-w-full space-y-3 overflow-hidden">
               {techStackRows.map((row, rowIndex) => (
                 <div key={rowIndex} className="overflow-hidden">

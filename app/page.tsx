@@ -6,16 +6,16 @@ const cards = [
   {
     href: "/about",
     title: "About",
-    desc: "Who I am, what I study, and what I enjoy building.",
+    desc: "A little about me and how I approach my work.",
     items: [
-      "M.S. in Computer Science graduate with a focus on AI and software",
-      "Seeking software engineering and AI-focused opportunities",
+      "Full-stack development, AI applications, and database systems",
+      "Open to software engineering roles, including work on AI applications",
     ],
   },
   {
     href: "/education",
     title: "Education",
-    desc: "Where I studied and the academic path I've taken.",
+    desc: "Computer science at Brown and Colorado School of Mines.",
     items: [
       "Brown University — M.S. in Computer Science, GPA 4.00",
       "Colorado School of Mines — B.S. in Computer Science, GPA 3.88",
@@ -24,19 +24,19 @@ const cards = [
   {
     href: "/projects",
     title: "Projects",
-    desc: "What I've built across AI, web, and software systems.",
+    desc: "From web interfaces to database internals.",
     items: [
-      "Menu Collection Web App built with React, Express, and MongoDB",
-      "AI-Driven Task Management System using agents, LangChain, Pinecone, and MongoDB",
+      "Disk-oriented database with B+Tree indexes, transactions, and crash recovery",
+      "Web applications built with React, Python APIs, and MongoDB",
     ],
   },
   {
     href: "/experience",
     title: "Experience",
-    desc: "Where I've applied my skills in practice.",
+    desc: "AI evaluation and VR software development.",
     items: [
-      "Software Developer Intern with Unity and VR development experience",
-      "Worked on PICO Neo3 deployment and C# interaction implementation",
+      "Handshake AI: reviewing text and image outputs against task-specific criteria",
+      "Fuzhou Amigo Software: building and testing Unity/C# applications on PICO Neo3",
     ],
   },
 ];
@@ -54,10 +54,11 @@ export default function HomePage() {
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <p className="max-w-3xl text-[1.05rem] leading-8 text-slate-600 md:text-xl">
-              Computer Science graduate with a focus on AI and software, building
-              thoughtful, user-facing systems and turning technical ideas into
-              practical software. Currently seeking software engineering and
-              AI-focused opportunities.
+              I’m Yonghao, a software developer with a master’s in computer science
+              from Brown. I enjoy taking an idea far enough that someone can
+              actually use it, then working through the details that make it work
+              well. These days, I’m building with AI and looking for my next
+              software engineering role.
             </p>
 
             <div className="flex flex-wrap gap-3 lg:justify-end">

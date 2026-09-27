@@ -5,7 +5,7 @@ export default function EducationPage() {
     <PageShell
       eyebrow="Education"
       title="Academic Background"
-      intro="A completed computer science education spanning software engineering, artificial intelligence, and systems."
+      intro="At Mines, I built a foundation in how computers and software work. At Brown, I went deeper into data, machine learning, and the decisions behind reliable systems."
     >
       <div className="relative ml-4 border-l border-sky-200 pl-8">
         <div className="relative mb-14">
@@ -19,7 +19,12 @@ export default function EducationPage() {
                 Master of Science in Computer Science
               </h3>
               <p className="mt-3 text-base text-slate-700">
-                Graduate study focused on computer science, with emphasis on artificial intelligence and software.
+                Deepened my understanding of how databases organize data, process
+                queries, and maintain consistency under concurrent access and
+                failures. Machine learning and data science coursework taught me to
+                reason about model selection, evaluate results, and examine the
+                assumptions behind an analysis. Across these subjects, I learned
+                to weigh efficiency, correctness, and the limits of a given approach.
               </p>
             </div>
 
@@ -44,7 +49,12 @@ export default function EducationPage() {
                 Bachelor of Science in Computer Science
               </h3>
               <p className="mt-3 text-base text-slate-700">
-                Undergraduate study across software development, algorithms and data structures, networks, privacy and security, and embedded systems.
+                Built a foundation in algorithms, data structures, operating
+                systems, and software design. Learned to break problems into smaller
+                parts, analyze computational costs, and organize code so it can be
+                tested and changed. Linux and embedded systems coursework helped me
+                understand how software interacts with hardware and works within
+                resource constraints.
               </p>
             </div>
 
