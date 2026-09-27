@@ -50,7 +50,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mx-auto mt-20 max-w-6xl px-6 py-14 text-sm text-slate-500">
+    <footer className="mx-auto mt-0 max-w-6xl px-6 py-14 text-sm text-slate-500">
       <div className="border-t border-sky-100/80 pt-12">
         <div className="grid gap-10 md:grid-cols-[1.15fr_0.85fr] md:items-start">
           <div>

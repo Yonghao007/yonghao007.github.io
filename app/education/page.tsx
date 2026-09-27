@@ -5,7 +5,7 @@ export default function EducationPage() {
     <PageShell
       eyebrow="Education"
       title="Academic Background"
-      intro="An academic journey from undergraduate study to graduate work in computer science."
+      intro="A completed computer science education spanning software engineering, artificial intelligence, and systems."
     >
       <div className="relative ml-4 border-l border-sky-200 pl-8">
         <div className="relative mb-14">
@@ -25,7 +25,7 @@ export default function EducationPage() {
 
             <div className="space-y-3 lg:pt-1">
               <p className="font-mono text-xs uppercase tracking-[0.16em] text-sky-600">
-                Expected May 2026
+                May 2026
               </p>
               <p className="text-sm text-slate-500">Providence, Rhode Island, USA</p>
               <p className="text-sm text-slate-500">GPA: 4.00</p>

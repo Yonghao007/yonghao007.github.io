@@ -55,23 +55,22 @@ export default function AboutPage() {
     <PageShell
       eyebrow="About"
       title="About Me"
-      intro="Computer Science graduate student at Brown University, currently focused on AI and software, with a broad undergraduate foundation across several areas of computing."
+      intro="Computer Science graduate with a focus on AI and software, a broad foundation across computing, and a practical approach to building reliable products."
     >
       <div className="flex flex-col gap-12">
         <section className="border-t border-sky-100/80 pt-8">
           <h2 className="font-serif text-3xl font-semibold text-slate-900">Background</h2>
           <p className="mt-5 max-w-4xl text-[1.05rem] leading-8 text-slate-600">
-            I am currently pursuing a Master of Science in Computer Science at Brown
-            University, where my recent work has been primarily focused on artificial
-            intelligence and software. Before that, my undergraduate study gave me
-            exposure to a broader range of areas, including software, computer networks,
-            privacy and security, and embedded systems.
+            I recently completed a Master of Science in Computer Science at Brown
+            University, where my work focused primarily on artificial intelligence and
+            software. Before that, my undergraduate study gave me exposure to a broader
+            range of areas, including software, computer networks, privacy and security,
+            and embedded systems.
           </p>
           <p className="mt-5 max-w-4xl text-[1.05rem] leading-8 text-slate-600">
             That mix of breadth and focus has shaped how I think about computing. I am
-            especially interested in building systems that are technically strong,
-            practical to use, and informed by both solid engineering and intelligent
-            behavior.
+            now looking for opportunities where I can contribute to technically strong,
+            practical systems through solid software engineering and intelligent behavior.
           </p>
         </section>
 

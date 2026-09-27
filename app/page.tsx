@@ -8,8 +8,8 @@ const cards = [
     title: "About",
     desc: "Who I am, what I study, and what I enjoy building.",
     items: [
-      "Computer Science graduate student at Brown University",
-      "Interested in thoughtful, user-facing software systems",
+      "M.S. in Computer Science graduate with a focus on AI and software",
+      "Seeking software engineering and AI-focused opportunities",
     ],
   },
   {
@@ -54,9 +54,10 @@ export default function HomePage() {
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <p className="max-w-3xl text-[1.05rem] leading-8 text-slate-600 md:text-xl">
-              Computer Science graduate student at Brown University, interested in
-              building thoughtful, user-facing systems and turning technical ideas
-              into practical software.
+              Computer Science graduate with a focus on AI and software, building
+              thoughtful, user-facing systems and turning technical ideas into
+              practical software. Currently seeking software engineering and
+              AI-focused opportunities.
             </p>
 
             <div className="flex flex-wrap gap-3 lg:justify-end">
